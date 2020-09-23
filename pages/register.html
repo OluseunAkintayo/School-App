@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Login || Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-ii">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><h2>DREY COLLEGE</h2></a>
+                <a href="../index.html"><img src="../images/drey42.jpg" alt=""></a>
+            </div>
+
+            <div class="today"><p>DD/MMM/YYYY<p></div>
+
+            <div class="header-text">
+                <h1>School Portal</h1>
+            </div>
+            <div class="other-object">
+                <p>Other stuff goes in here...</p>
+            </div>
+        </header>
+
+        <div class="mainForm">
+            <div class="form">
+                <h3>Sign up for portal access</h3>
+                <form name="register" class="register">
+                    <div class="input-form">
+                        <input type="text" class="frstName" placeholder="First Name" required>
+                    </div>
+                    <div class="input-form">
+                        <input type="text" class="lstName" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-form">
+                        <select name="gender" id="gender">
+                            <option value="none">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-form">
+                        <input type="email" class="e-mail" placeholder="Enter Email Address" required>
+                    </div>
+                    <div class="input-form">
+                        <select name="acctType" id="acctType">
+                            <option value="none">Choose account type</option>
+                            <option value="Male">Student</option>
+                            <option value="Female">Teacher</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-form">
+                        <input type="text" class="user" placeholder="Preferred Username" required>
+                    </div>
+                    <div class="input-form">
+                        <input type="password" class="login-pwd" placeholder="Enter Password" required>                     
+                    </div>
+                    <div class="input-form">
+                        <input type="password" class="login-pwd" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="input-form" id="consent">
+                        <label class="consent"><input type="checkbox" class="remember" required>I accept the terms and conditions of use</label>
+                    </div>
+                    <p></p>
+                    <button class="login">Register</button>
+                </form>
+                <p class="form-footer">Have an account already? <a href="login.html">Sign in here.</a></p>
+            </div>
+        
+        </div>
+            
+        <footer class="footer">
+            <p>Copyright &COPY; Dreywandowski College, 2020.</p>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
