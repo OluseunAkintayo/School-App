@@ -1,10 +1,23 @@
 Payment Dashboard
 
 
-Use the pic as wallpaper
+Use the design in the "payment" pic
 
 ==> Design a form
 
 => Name, Email, Number,  Amount
+
+
+
+Student Dashboard
+
+Use the design and wallpaper in "dashboard" form
+
+==> Design a left sided sidebar, similar to Twitter's {check the Twitter image attached for guide}
+
+=> The left sidebar contains: "Update Profile", "Download Courses", "Pay School Fees", "Payment History", "Exam Portal", "Exam Results"
+
+=> Make a central div for Profile Picture 
+=> Responsive
 
 
