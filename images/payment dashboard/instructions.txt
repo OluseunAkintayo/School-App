@@ -1,0 +1,10 @@
+Payment Dashboard
+
+
+Use the pic as wallpaper
+
+==> Design a form
+
+=> Name, Email, Number,  Amount
+
+
