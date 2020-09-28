@@ -4,3 +4,4 @@
 2. Instead of the Graduating cap image you can put an image of Home, similar to wen u try to go to home on websites.
 3. Kindly design a page that will have "Registration Successful!! You can login now"
 4. The login link will be a button and sufficiently big enough to capture, use the "success" picture as background
+5. Under Courses: add a search bar; add a plus / minus buttons to add / remove courses; courses table
