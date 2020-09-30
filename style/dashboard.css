@@ -1,7 +1,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 90%;
-    background-image: url("../images/dashboard.jpg");
+    /* background-image: url("../images/dashboard.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Noto Sans KR', sans-serif;
@@ -9,7 +9,6 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
 .mainContainer {
@@ -40,6 +39,12 @@ a {
 .left-nav {
     grid-column: 1 / span 2;
     margin: -5px 0;
+    background-color: rgb(247, 240, 240);
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .left-nav .user-summary, .left-nav .quickLinks a {
@@ -60,6 +65,9 @@ a {
 .left-nav .user-summary .profile-picture img {
     width: 80%;
     border-radius: 50%;
+}
+.left-nav .user-summary .profile-picture img:hover {
+    cursor: pointer;
 }
 
 .left-nav .user-summary .userName {
@@ -103,6 +111,62 @@ a {
     padding: 5%;
 }
 
+div.pay {
+    grid-column: 3 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pay form {
+    width: 50%;
+    margin-top: -20%;
+}
+
+form.payment {
+}
+
+div.payment-form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+input.inputText {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+    border: solid 1px skyblue;
+    background: whitesmoke;
+}
+
+input.inputText:focus {
+    outline: deepskyblue solid 1px;
+}
+
+form.payment button {
+    height: 45px;
+    width: 100%;
+    background: deepskyblue;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form.payment button:hover {
+    background: skyblue;
+}
+
+p.form-footer {
+    font-size: 80%;
+    text-align: center;
+}
+
 .footerContent {
     grid-column: 1 / -1;
     display: flex;
@@ -115,7 +179,7 @@ a {
 @media only screen and (min-width: 450px) and (max-width: 800px) {
     .left-nav {
         grid-column: 1 / span 3;
-        background: white;
+        background-color: rgb(247, 240, 240);
         margin: -5px 0;
         font-size: 90%;
     }
@@ -125,4 +189,20 @@ a {
         line-height: 2rem;
         padding: 5%;
     }
+
+    div.pay {
+        grid-column: 4 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.pay form {
+        width: 80%;
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+
 }
