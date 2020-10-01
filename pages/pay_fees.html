@@ -11,16 +11,30 @@
     <link rel="stylesheet" href="../style/dashboard.css">
 
     <title>Student Dashboard</title>
+    <script>
+        function menuFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
 </head>
 <body>
     <div class="mainContainer">
         <div class="headerContent">
+            <div class="profile-picture-1">
+                <img src="../images/male-profile-picture.jpg">
+            </div>
             <header>
                 <h2 class="top">Welcome to Drey College</h2>
+                <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()"><i class="fas fa-bars"></i></a>
             </header>
         </div>
 
-        <div class="left-nav">
+        <div class="left-nav" id="myLinks">
             <div class="user-summary">
                 <div class="profile-picture">
                     <img src="../images/male-profile-picture.jpg">
