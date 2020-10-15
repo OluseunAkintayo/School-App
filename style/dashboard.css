@@ -1,7 +1,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 90%;
-    /* background-image: url("../images/dashboard.jpg"); */
+    background-image: url("../images/dashboard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Noto Sans KR', sans-serif;
@@ -16,10 +16,10 @@ a {
     grid-gap: 5px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto auto auto;
-    margin: 2% auto;
+    margin: 0 auto;
     background: rgba(254,245,245,0.8);
     width: 80%;
-    border-radius: 15px;
+    height: 96vh;
 }
 
 .headerContent {
@@ -29,13 +29,12 @@ a {
     justify-content: center;
     background: deepskyblue;
     color: white;
-    border-radius: 15px 15px 0 0;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 3%;
     width: 94%;
 }
@@ -59,7 +58,7 @@ header div.home a {
     background-color: rgb(247, 240, 240);
 }
 
-.menu-icon {
+.menu-icon, div.logout, i.fa-home {
     display: none;
 }
 
@@ -213,16 +212,9 @@ p.form-footer {
         padding: 5%;
     }
 
-    div.pay {
-        grid-column: 4 / -1;
+    .headerContent {
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    div.pay form {
-        width: 80%;
-        margin-top: -20%;
+        justify-content: space-between;
     }
 }
 
@@ -236,13 +228,13 @@ p.form-footer {
     }
 
     .headerContent {
-        height: 50px;
+        height: 40px;
         display: flex;
         justify-content: space-between;
         padding: 1rem 3rem;
         border-radius: 0 0 0 0;
         background: none;
-        border-bottom: solid 1px deepskyblue;
+        border-bottom: solid 1px black;
     }
 
     hr {
