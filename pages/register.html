@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/login.css">
     <title>Sign Up</title>
+
+    <script src="../script/validate.js"></script>
 </head>
 
 <body>
@@ -27,7 +29,7 @@
         <div class="mainForm">
             <div class="form">
                 <h3>Sign up for portal access</h3>
-                <form name="register" class="register">
+                <form name="register" onsubmit="return validation()" class="register" action="reg-ssuccess.html">
                     <div class="input-form">
                         <input type="text" class="frstName" placeholder="First Name" required>
                     </div>
@@ -46,7 +48,7 @@
                         <input type="email" class="e-mail" placeholder="Enter Email Address" required>
                     </div>
                     <div class="input-form">
-                        <select name="acctType" id="acctType">
+                        <select name="acctType" id="acctType" required>
                             <option value="none">Choose account type</option>
                             <option value="Male">Student</option>
                             <option value="Female">Teacher</option>
@@ -57,10 +59,10 @@
                         <input type="text" class="user" placeholder="Preferred Username" required>
                     </div>
                     <div class="input-form">
-                        <input type="password" class="login-pwd" placeholder="Enter Password" required>                     
+                        <input type="password" class="login-pwd" placeholder="Enter Password" id="pwd-i" required>                     
                     </div>
                     <div class="input-form">
-                        <input type="password" class="login-pwd" placeholder="Confirm Password" required>
+                        <input type="password" class="login-pwd" placeholder="Confirm Password" id="pwd-ii" required>
                     </div>
                     <div class="input-form" id="consent">
                         <label class="consent"><input type="checkbox" class="remember" required>I accept the terms and conditions of use</label>
