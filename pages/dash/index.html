@@ -8,57 +8,56 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="../../style/dashboard.css">
 
     <title>Student Dashboard</title>
-    <script>
-        function menuFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-        }
-    </script>
+    <script src="../../script/app.js"></script>
 </head>
 <body>
     <div class="mainContainer">
-        <div class="headerContent">
-            <div class="profile-picture-1">
-                <img src="../images/male-profile-picture.jpg">
-            </div>
+        <div class="headerContent" id="headerContent">
             <header>
-                <div class="home"><a href="./dashboard.html"><i class="fas fa-home" title="Dashboard home"></i></a></div>
-                <div class="h2"><h2 class="top">Welcome to Drey College</h2></div>
-                <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()"><i class="fas fa-bars"></i></a>
-                <div class="logout"><a href="#">Logout</a></div>
+                <!-- <div class="home"><a href="./dashboard.html"><i class="fas fa-home" title="Dashboard home"></i></a></div> -->
+                <div class="h2"><h1 class="top">Student Dashboard</h1></div>
             </header>
+        </div>
+
+        <div class="headerContent-II" id="header-content">
+            <div class="profile-picture-II">
+                <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="dashboard">
+            <a href="index.html"><h2 class="">Dashboard</h2></a>
+            </div>
         </div>
 
         <div class="left-nav" id="myLinks">
             <div class="user-summary">
                 <div class="profile-picture">
-                    <img src="../images/male-profile-picture.jpg">
+                    <img src="../../images/male-profile-picture.jpg">
                 </div>
                 <div class="userName">
-                    <p class="mainUserName">Captain Rogers</p>
+                    <p class="mainUserName">Steven Rogers</p>
                     <p class="userFooter">Student ID: #1234FY82K2</p>
                     <p class="update"><a href="#">Update Profile
                         <i class="fas fa-user-edit"></i>
                     </a></p>
                 </div>
             </div>
-            <hr>
+            <hr class="no-display">
             <div class="quickLinks">
-                <a href="pay_fees.html">Pay Fees</a>
+                <a href="./pay_fees.html">Pay Fees</a>
                 <a href="#">Payment Status</a>
                 <a href="#">Payment History</a>
-                <a href="#">Manage Courses</a>
+                <hr>
+                <a href="./courses.html">Manage Courses</a>
                 <a href="#">Download Courses</a>
+                <hr>
                 <a href="#">Exam Portal</a>
                 <a href="#">Exam Schedule</a>
                 <a href="#">Exam Results</a>
+                <hr>
+                <a href="#">Logout</a>
             </div>
         </div>
 
@@ -72,7 +71,7 @@
         </div>
 
         <div class="footerContent">
-            <p>Copyright &COPY; Dreywandowski College, 2020.</p>
+            <p>Copyright &COPY; <a href="../../index.html">Drey College</a>, 20XY.</p>
         </div>
     </div>
     

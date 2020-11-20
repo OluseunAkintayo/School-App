@@ -1,5 +1,4 @@
 body {
-    font-family: 'Rubik', sans-serif;
     font-size: 90%;
     background-image: url("../images/dashboard.jpg");
     background-repeat: no-repeat;
@@ -18,7 +17,7 @@ a {
     grid-template-rows: auto auto auto;
     margin: 0 auto;
     background: rgba(254,245,245,0.8);
-    width: 80%;
+    width: 90%;
     height: 96vh;
 }
 
@@ -29,6 +28,10 @@ a {
     justify-content: center;
     background: deepskyblue;
     color: white;
+}
+
+.headerContent-II {
+    display: none;
 }
 
 header {
@@ -56,10 +59,6 @@ header div.home a {
     grid-column: 1 / span 2;
     margin: -5px 0;
     background-color: rgb(247, 240, 240);
-}
-
-.menu-icon, div.logout, i.fa-home {
-    display: none;
 }
 
 .profile-picture-1 {
@@ -100,6 +99,7 @@ header div.home a {
 
 .left-nav .user-summary .userName .mainUserName {
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .left-nav .user-summary .userName .userFooter {
@@ -137,6 +137,7 @@ header div.home a {
 }
 
 div.pay {
+    padding-top: 15vh;
     grid-column: 3 / -1;
     display: flex;
     align-items: center;
@@ -199,6 +200,9 @@ p.form-footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+    .mainContainer {
+        width: 98%;
+    }
     .left-nav {
         grid-column: 1 / span 3;
         background-color: rgb(247, 240, 240);
@@ -207,9 +211,22 @@ p.form-footer {
     }
 
     .midContent {
-        grid-column: 4 / -1;
+        grid-column: 4 / span 3;
         line-height: 2rem;
         padding: 5%;
+        background-color: teal;
+    }
+
+    div.pay {
+        grid-column: 4 / -1;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.pay form {
+        margin: 0 auto;
+        padding: 0;
+        width: 70%;
     }
 
     .headerContent {
@@ -219,85 +236,118 @@ p.form-footer {
 }
 
 @media only screen and (max-width: 499px) {
-    .mainContainer {
-        width: 98%;
-        margin: 2% 1%;
-        display: inline-block;
-        border-radius: 0 0 0 0;
-        background: rgba(254,245,245,0.8);;
+    body {
+        background-image: url("../images/dashboard.jpg");
+        background: whitesmoke;
+        padding: 0;
     }
 
-    .headerContent {
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 3rem;
-        border-radius: 0 0 0 0;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    div.mainContainer {
+        display: block;
         background: none;
-        border-bottom: solid 1px black;
+        width: 99%;
+        margin: 0 auto;
+        padding: 0;
     }
 
-    hr {
+    div.headerContent {
         display: none;
     }
 
-    .headerContent h2 {
-        display: none;
+    div.headerContent-II {
+        display: block;
+        height: 10vh;
+        padding: 0.3rem;
+        background-color: deepskyblue;
     }
 
-    .profile-picture-1 {
-        height: 100%;
-        cursor: pointer;
+    div.profile-picture-II {
+        float: left;
     }
 
-    .profile-picture-1 img {
+    div.profile-picture-II .fa-bars {
+        font-size: 2rem;
+        padding: 1.5rem;
+        color: white;
+    }
+
+    div.profile-picture-II img {
+        width: 100%;
         height: 100%;
-        width: auto;
         border-radius: 50%;
     }
 
-    .profile-picture-1, .menu-icon {
-        display: block;
-        font-size: 2rem;
+    div.dashboard {
+        display: flex;
+        margin-left: 35%;
+        color: white;
+        padding: 1rem;
     }
 
-    .left-nav {
+    div.dashboard h2 {
+        margin-top: 10%;
+    }
+
+    div.midContent {
+        margin: 0 auto;
+        line-height: 2.5rem;
+        padding: 1%;
+        height: 95vh;
+    }
+
+    div.left-nav {
         display: none;
-    }
-
-    .quickLinks {
-        background: rgb(206, 204, 204);
-        margin-bottom: -5%;
-        height: 40vh;
-        width: auto;
-    }
-
-    .quickLinks a:nth-child(1) {
-        margin: 0 0 -5% 0;
-    }
-
-    .quickLinks a {
-        margin: -5% 0;
-    }
-
-    i {
-        color: black;
+        z-index: 1;
+        margin-top: 0px;
+        width: 100%;
+        height: 60vh;
+        overflow: scroll;
+        background-color: rgb(97, 176, 203);
+        color: whitesmoke;
     }
 
     .user-summary {
-        display: none;
+        display: flex;
+        width: 100%;
+        margin-top: 1vh;
     }
 
-    .midContent {
+    div.left-nav .profile-picture {
+        width: 50%;
         display: block;
+        height: 20vh;
+        margin: 0;
     }
 
-    .pay {
-        margin-top: 35%;
-        margin-bottom: 20%;
+    div.left-nav .userName {
+        text-align: center;
+        height: 20vh;
+        padding: 1%;
+        width: 40%;
+        margin-top: 3vh;
+        margin-left: -5vw;
+    }
+
+    div.quickLinks {
+        border-top: 1px solid whitesmoke;
+    }
+
+    div.pay {
+        height: 64vh;
     }
 
     div.pay form {
         width: 75%;
+        margin-top: -25vh;
     }
+
+    hr.no-display {
+        display: none;
+    }
+
 }
