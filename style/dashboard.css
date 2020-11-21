@@ -3,7 +3,8 @@ body {
     background-image: url("../images/dashboard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
     margin: 0 auto;
     background: rgba(254,245,245,0.8);
     width: 90%;
-    height: 96vh;
+    min-height: 96vh;
 }
 
 .headerContent {
@@ -55,7 +56,7 @@ header div.home a {
     background: deepskyblue;
 }
 
-.left-nav {
+.menu {
     grid-column: 1 / span 2;
     margin: -5px 0;
     background-color: rgb(247, 240, 240);
@@ -129,13 +130,62 @@ header div.home a {
     padding-right: 10px;
 }
 
-.midContent {
+.midContent, .main {
     grid-column: 3 / -1;
     line-height: 3rem;
     text-align: justify;
     padding: 5%;
+    
 }
 
+div.searchBar, div.table {
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+.main .searchBar form.search input[type=text] {
+    width: 98%;
+    height: 50px;
+    padding: 0 0 0 2%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.main .searchBar form.search input[type=text]:focus {
+    outline: 1px solid deepskyblue;
+}
+
+.main table {
+    width: 100%;
+    height: 60%;
+    background: whitesmoke;
+    line-height: 2.5rem;
+    margin: 0 auto;
+}
+
+.main table tr td {
+    border-top: solid gray 1px;
+}
+
+table tr th.course-code, table tr th.course-units {
+    width: 15%;
+}
+
+.course-units {
+    text-align: right;
+    padding-right: 40%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(234, 232, 232);
+}
+
+tr.total {
+    font-weight: bold;
+}
+
+/* payment form styling begins here */
 div.pay {
     padding-top: 15vh;
     grid-column: 3 / -1;
@@ -199,22 +249,22 @@ p.form-footer {
     border-top: solid 1px black;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
     .mainContainer {
         width: 98%;
     }
-    .left-nav {
+
+    .menu {
         grid-column: 1 / span 3;
         background-color: rgb(247, 240, 240);
         margin: -5px 0;
         font-size: 90%;
     }
 
-    .midContent {
-        grid-column: 4 / span 3;
+    .midContent, .main {
+        grid-column: 4 / -1;
         line-height: 2rem;
         padding: 5%;
-        background-color: teal;
     }
 
     div.pay {
@@ -235,7 +285,7 @@ p.form-footer {
     }
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 599px) {
     body {
         background-image: url("../images/dashboard.jpg");
         background: whitesmoke;
@@ -246,7 +296,7 @@ p.form-footer {
         text-decoration: none;
         color: inherit;
     }
-
+    
     div.mainContainer {
         display: block;
         background: none;
@@ -297,15 +347,13 @@ p.form-footer {
         margin: 0 auto;
         line-height: 2.5rem;
         padding: 1%;
-        height: 95vh;
+        height: 80vh;
     }
 
     div.left-nav {
-        display: none;
-        z-index: 1;
         margin-top: 0px;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         overflow: scroll;
         background-color: rgb(97, 176, 203);
         color: whitesmoke;
@@ -313,7 +361,7 @@ p.form-footer {
 
     .user-summary {
         display: flex;
-        width: 100%;
+        width: auto;
         margin-top: 1vh;
     }
 
@@ -349,5 +397,45 @@ p.form-footer {
     hr.no-display {
         display: none;
     }
+
+    /* The menu (background) */
+    .menu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 10vh; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* menu Content */
+    .menu-content {
+        background-color: whitesmoke;
+        margin: 0 auto;
+        padding: 1%;
+        border: 1px solid #888;
+        width: 94%;
+    }
+    
+    /* The Close Button
+    .close {
+        display: block;
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    */
 
 }

@@ -1,3 +1,12 @@
+// make side nav pop up in mobile view
+let modal = document.getElementById("myMenu");
+let btn = document.getElementById("myBtn");
+btn.onclick = function() { modal.style.display = "block"; }
+window.onclick = function(e) {
+  if (e.target == modal) { modal.style.display = "none"; }
+}
+
+
 // validate the password on the register page
 /* function validation() {
     let password1 = document.getElementById('pwd-i');
@@ -12,6 +21,7 @@
 }
 */
 
+/*
 function menuFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -20,7 +30,9 @@ function menuFunction() {
         x.style.display = "block";
     }
 }
+*/
 
+/*
 // Sticky navbar //
 window.onscroll = function() { stickyHeader() };
 let topContent = document.getElementById('header-content');
@@ -33,3 +45,4 @@ function stickyHeader() {
         topContent.classList.remove("sticky");
     }
 }
+*/

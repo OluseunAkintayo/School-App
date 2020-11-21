@@ -11,54 +11,59 @@
     <link rel="stylesheet" href="../../style/dashboard.css">
 
     <title>Student Dashboard :: Pay Fees</title>
-    <script src="../../script/app.js"></script>
 </head>
 <body>
     <div class="mainContainer">
         <div class="headerContent" id = "headerContent">
             <header>
-                <div class="h2"><h2 class="top">Welcome to Drey College</h2></div>
+                <div class="h2"><h2 class="top">Dashboard</h2></div>
             </header>
         </div>
 
         <div class="headerContent-II" id="header-content">
             <div class="profile-picture-II">
-                <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()"><i class="fas fa-bars"></i></a>
+                <a class="menu-icon"><i class="fas fa-bars" id="myBtn"></i></a>
             </div>
             <div class="dashboard">
             <a href="./index.html"><h2 class="">Dashboard</h2></a>
             </div>
         </div>
 
-        <div class="left-nav" id="myLinks">
-            <div class="user-summary">
-                <div class="profile-picture">
-                    <img src="../../images/male-profile-picture.jpg">
-                </div>
-                <div class="userName">
-                    <p class="mainUserName">Captain Rogers</p>
-                    <p class="userFooter">Student ID: #1234FY82K2</p>
-                    <p class="update"><a href="#">Update Profile
-                        <i class="fas fa-user-edit"></i>
-                    </a></p>
+        <!-- Menu -->
+        <div id="myMenu" class="menu">
+            <div class="menu-content">
+    
+                <div class="left-nav" id="myLinks">
+                    <div class="user-summary">
+                        <div class="profile-picture">
+                            <img src="../../images/male-profile-picture.jpg">
+                        </div>
+                        <div class="userName">
+                            <p class="mainUserName">Steven Rogers</p>
+                            <p class="userFooter">Student ID: #1234FY82K2</p>
+                            <p class="update"><a href="#">Update Profile
+                                <i class="fas fa-user-edit"></i>
+                            </a></p>
+                        </div>
+                    </div>
+                    <hr class="no-display">
+                    <div class="quickLinks">
+                        <a href="./pay_fees.html">Pay Fees</a>
+                        <a href="#">Payment Status</a>
+                        <a href="#">Payment History</a>
+                        <hr>
+                        <a href="./courses.html">Manage Courses</a>
+                        <a href="#">Download Courses</a>
+                        <hr>
+                        <a href="#">Exam Portal</a>
+                        <a href="#">Exam Schedule</a>
+                        <a href="#">Exam Results</a>
+                        <hr>
+                        <a href="#">Logout</a>
+                    </div>
                 </div>
             </div>
-            <hr class="no-display">
-            <div class="quickLinks">
-                <a href="pay_fees.html">Pay Fees</a>
-                <a href="#">Payment Status</a>
-                <a href="#">Payment History</a>
-                <hr>
-                <a href="./courses.html">Manage Courses</a>
-                <a href="#">Download Courses</a>
-                <hr>
-                <a href="#">Exam Portal</a>
-                <a href="#">Exam Schedule</a>
-                <a href="#">Exam Results</a>
-                <hr>
-                <a href="#">Logout</a>
             </div>
-        </div>
 
             <div class="pay">
                 <form action="" class="payment">
@@ -85,5 +90,6 @@
         </div>
     </div>
     
+    <script src="../../script/app.js"></script>
 </body>
 </html>

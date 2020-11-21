@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../../style/dashboard.css">
-
-    <title>Student Dashboard</title>
-    <script src="../../script/app.js"></script>
-</head>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="../../style/dashboard.css">
+    
+        <title>Modal Nav Demo</title>
+    </head>
 <body>
-    <div class="mainContainer">
+
+<div class="mainContainer">
         <div class="headerContent" id="headerContent">
             <header>
-                <!-- <div class="home"><a href="./dashboard.html"><i class="fas fa-home" title="Dashboard home"></i></a></div> -->
-                <div class="h2"><h1 class="top">Student Dashboard</h1></div>
+                <div class="h2"><h1 class="top">Dashboard</h1></div>
             </header>
         </div>
 
         <div class="headerContent-II" id="header-content">
             <div class="profile-picture-II">
-                <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()"><i class="fas fa-bars"></i></a>
+                <a class="menu-icon"><i class="fas fa-bars" id="myBtn"></i></a>
             </div>
             <div class="dashboard">
             <a href="index.html"><h2 class="">Dashboard</h2></a>
             </div>
         </div>
 
-        <div class="left-nav" id="myLinks">
-            <div class="user-summary">
-                <div class="profile-picture">
-                    <img src="../../images/male-profile-picture.jpg">
+        <!-- Menu -->
+        <div id="myMenu" class="menu">
+        <div class="menu-content">
+
+            <div class="left-nav" id="myLinks">
+                <div class="user-summary">
+                    <div class="profile-picture">
+                        <img src="../../images/male-profile-picture.jpg">
+                    </div>
+                    <div class="userName">
+                        <p class="mainUserName">Steven Rogers</p>
+                        <p class="userFooter">Student ID: #1234FY82K2</p>
+                        <p class="update"><a href="#">Update Profile
+                            <i class="fas fa-user-edit"></i>
+                        </a></p>
+                    </div>
                 </div>
-                <div class="userName">
-                    <p class="mainUserName">Steven Rogers</p>
-                    <p class="userFooter">Student ID: #1234FY82K2</p>
-                    <p class="update"><a href="#">Update Profile
-                        <i class="fas fa-user-edit"></i>
-                    </a></p>
+                <hr class="no-display">
+                <div class="quickLinks">
+                    <a href="./pay_fees.html">Pay Fees</a>
+                    <a href="#">Payment Status</a>
+                    <a href="#">Payment History</a>
+                    <hr>
+                    <a href="./courses.html">Manage Courses</a>
+                    <a href="#">Download Courses</a>
+                    <hr>
+                    <a href="#">Exam Portal</a>
+                    <a href="#">Exam Schedule</a>
+                    <a href="#">Exam Results</a>
+                    <hr>
+                    <a href="#">Logout</a>
                 </div>
             </div>
-            <hr class="no-display">
-            <div class="quickLinks">
-                <a href="./pay_fees.html">Pay Fees</a>
-                <a href="#">Payment Status</a>
-                <a href="#">Payment History</a>
-                <hr>
-                <a href="./courses.html">Manage Courses</a>
-                <a href="#">Download Courses</a>
-                <hr>
-                <a href="#">Exam Portal</a>
-                <a href="#">Exam Schedule</a>
-                <a href="#">Exam Results</a>
-                <hr>
-                <a href="#">Logout</a>
-            </div>
+        </div>
         </div>
 
         <div class="midContent">
@@ -73,7 +78,9 @@
         <div class="footerContent">
             <p>Copyright &COPY; <a href="../../index.html">Drey College</a>, 20XY.</p>
         </div>
-    </div>
-    
+</div>
+
+<script src="../../script/app.js"></script>
+
 </body>
 </html>
